@@ -1,0 +1,3 @@
+[submodule "game-study"]
+	path = game-study
+	url = git@github.com:tkling/game-study.git
