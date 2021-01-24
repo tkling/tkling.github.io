@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            .pageText {
+                color: #ffffff;
+                text-align: center;
+                font-size: 42px;
+                font-family: Arial, Helvetica, sans-serif;
+                background: RGBA(104, 104, 104, 0.5);
+                width: max-content;
+                margin: auto;
+                margin-top: 100px;
+                padding: 10px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            const imageUrls = [
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-2-1590693053.jpg",
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-1-1590693067.jpg",
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-7-1590693041.jpg",
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-13-1590693076.jpg",
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-tacoma-trd-off-road-04-fb37d611aa35f4b7fc1d83190dfde629e02c146b-1590693083.jpg"
+            ];
+
+            const randomIndex = Math.floor(Math.random() * imageUrls.length);
+            document.body.style.background = `url(${imageUrls[randomIndex]}) 0px ${document.documentElement.clientHeight-250}px/cover no-repeat`;
+        </script>
+
+        <p class="pageText">It's been <span id="target"></span> days since I visited the Toyota dealership 👀</p>
+        
+        <script>
+            const visitDate = new Date("January 9, 2021");
+            const today = new Date();
+            const timeSinceVisit = (today.getTime() - visitDate.getTime()) / (24 * 60 * 60 * 1000);
+
+            document.getElementById("target").innerText = timeSinceVisit.toString().match(/^\d+\.\d{2}/)[0];
+        </script>
+    </body>
+</html>
