@@ -27,7 +27,7 @@
             ];
 
             const randomIndex = Math.floor(Math.random() * imageUrls.length);
-            document.body.style.background = `url(${imageUrls[randomIndex]}) 0px ${document.documentElement.clientHeight-250}px/cover no-repeat`;
+            document.body.style.background = `url(${imageUrls[randomIndex]}) 0px ${-window.innerHeight+690}px/cover no-repeat`;
         </script>
 
         <p class="pageText">It's been <span id="target"></span> days since I visited the Toyota dealership 👀</p>
