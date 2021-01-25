@@ -18,16 +18,10 @@
 
     <body>
         <script>
-            const imageUrls = [
-                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-2-1590693053.jpg",
-                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-1-1590693067.jpg",
-                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-7-1590693041.jpg",
-                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/20-tacoma-trd-off-road-cement-13-1590693076.jpg",
-                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2020-tacoma-trd-off-road-04-fb37d611aa35f4b7fc1d83190dfde629e02c146b-1590693083.jpg"
-            ];
+            const imageUrls = ["1", "2", "3", "4", "premium_interior"].map((name) => `//images/tacoma/${name}.jpg`);
+            const randomImage = imageUrls[Math.floor(Math.random() * imageUrls.length)];
 
-            const randomIndex = Math.floor(Math.random() * imageUrls.length);
-            document.body.style.background = `url(${imageUrls[randomIndex]}) 0px ${-window.innerHeight+690}px/cover no-repeat`;
+            document.body.style.background = `url("${randomImage}") 0px ${window.innerHeight}px/cover repeat-y`;
         </script>
 
         <p class="pageText">It's been <span id="target"></span> days since I visited the Toyota dealership 👀</p>
