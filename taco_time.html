@@ -21,7 +21,7 @@
             const imageUrls = ["1", "2", "3", "4", "premium_interior"].map((name) => `images/tacoma/${name}.jpg`);
             const randomImage = imageUrls[Math.floor(Math.random() * imageUrls.length)];
 
-            document.body.style.background = `url(${randomImage}) 0px ${window.innerHeight-250}px/cover no-repeat`;
+            document.body.style.background = `url(${randomImage}) top left/cover no-repeat`;
         </script>
 
         <p class="pageText">It's been <span id="target"></span> days since I visited the Toyota dealership 👀</p>
