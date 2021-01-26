@@ -1,4 +1,0 @@
-[submodule "game-study"]
-	path = game-study
-	url = https://github.com/tkling/game-study.git
-	branch = main

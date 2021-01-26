@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <style>
         body {
@@ -41,7 +43,7 @@
         const randomImage = imageUrls[Math.floor(Math.random() * imageUrls.length)];
         const isLandscapeOrientation = window.innerHeight < window.innerWidth;
         const isMobile = isMobileDevice();
-        const position = { x: 0, y: -225, cover: '/cover'};
+        const position = { x: 0, y: -225, cover: '/cover' };
 
         if (isMobile && isLandscapeOrientation)  { position.y = -140; }
         if (isMobile && !isLandscapeOrientation) { position.x = -530; position.cover = ''; }
@@ -54,8 +56,8 @@
     </div>
 
     <script>
-        const visitDate = new Date("January 9, 2021");
         const today = new Date();
+        const visitDate = new Date("January 9, 2021");
         const timeSinceVisit = (today.getTime() - visitDate.getTime()) / (24 * 60 * 60 * 1000);
 
         document.getElementById("days").innerText = timeSinceVisit.toString().match(/^\d+\.\d{2}/)[0];
