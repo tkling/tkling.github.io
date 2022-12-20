@@ -20,7 +20,7 @@
           </ul>
         </div>
       </nav>
-      
+
       <div style="padding-top:20px" class="container">
         <!-- contact -->
         <p>
@@ -32,36 +32,49 @@
           </ul>
         </p>
         <hr />
-        
+
         <!-- professional experience -->
         <p>
           <h2>professional experience</h2>
           <ul>
-            <li><h3>"full stack" software engineer - since 2011</h3>
+	    <li>
+	      <h3>tech lead + principal engineer - since 2020</h3>
+	      <ul>
+	        <li>feature ownership from idea -> delivery</li>
+		<li>requirement gathering, refinement, documenting</li>
+		<li>product and feature proposals; technical design/implementation proposals</li>
+		<li>full-stack technical contributions</li>
+		<li>cross-org technical evangelism and mentorship</li>
+	      </ul>
+	    </li>
+            <li>
+	      <h3>"full stack" software engineer - since 2011</h3>
               <ul>
-                <li>more time in back-end roles - SRE, on-call, devops</li>
+                <li>backend-oriented but always willing to dive into some frontend work</li>
                 <li>language-wise ruby brings me the most happiness</li>
                 <li>I've worked in Windows, OSX, and linux environments</li>
                 <li>comfortable on the command line</li>
               </ul>
             </li>
-            <li><h3>platform engineering lead - 2014-2018</h3>
+            <li>
+	      <h3>platform engineering lead - 2014-2018</h3>
               <ul>
-                <li>manage a small team of engineers</li>
-                <li>rough 50/50 code/"management stuff" split</li>
+                <li>managed a small team of engineers</li>
+                <li>rough 50/50 code/"people management stuff" split</li>
               </ul>
             </li>
-            <li><h3>server tech - 2008-2011</h3>
+            <li>
+	      <h3>server tech (hardware) - 2008-2011</h3>
               <ul>
-                <li>configured servers - hardware mostly - to customer spec</li>
+                <li>built and configured servers to customer spec</li>
                 <li>handled customer service calls and warranty issues</li>
-                <li>packing/shipping/handling/inventory duties as well</li>
+                <li>packing/shipping/handling/inventory duties</li>
               </ul>
             </li>
           </ul>
         </p>
         <hr />
-        
+
         <!-- skills -->
         <p>
           <h2>skills</h2>
@@ -69,13 +82,9 @@
           <ul>
             <li>Ruby
               <ul>
-                <li>Web stuff
-                  <ul>
-                    <li>Rails and Sinatra</li>
-                    <li>Sidekiq for async processing</li>
-                  </ul>
-                </li>
-                <li>Configuration management - Chef</li>
+                <li>Rails and Sinatra, Sidekiq</li>
+                <li>Sidekiq for async processing</li>
+                <li>Configuration management - Chef and Puppet</li>
                 <li><a href="/projects.html">Other projects - most of them are in ruby</a></li>
               </ul>
             </li>
@@ -83,13 +92,16 @@
               <ul>
                 <li>Web and non-web stuff using an in-house framework built on top of ASP.Net with MVC addons</li>
                 <li><a href="http://backlogtracker.com">backlog tracker</a> was built in ASP.Net MVC before being rewritten in ruby</li>
+		<li>Desktop client/server application development - .net forms with WCF data contract backend</li>
               </ul>
             </li>
+	    <li>Python - Django, FastAPI, Celery
             <li>C# & VB.Net - web and desktop applications</li>
-            <li>Java</li>
+            <li>Java - some exposure to Groovy and Kotlin</li>
             <li>HTML, CSS, Javascript</li>
+	    <li>React, typescript</li>
           </ul>
-          
+
           <h3>Cloud Providers</h3>
           <ul>
             <li>Amazon Web Services
@@ -98,22 +110,33 @@
                 <li>database/cache services: Elasticache Redis and Memcached, RDS, DynamoDB</li>
                 <li>EC2 and associated tools: Elastic Load Balancers, Autoscaling Groups, AMIs</li>
                 <li>VPC, subnets, routing, and security groups</li>
-                <li>others: S3, CloudFormation, CloudWatch and 3rd party CloudWatch graphing tools, IAM, CloudTrail, API integrations with many services for CI server and chat hooks</li>
+                <li>others: CDK, S3, CloudFormation, CloudWatch and 3rd party CloudWatch graphing tools, IAM,
+		    CloudTrail, API integrations with many services for CI server and chat hooks</li>
               </ul>
             </li>
             <li>other cloud providers: Heroku, Engine Yard</li>
           </ul>
-          
+
           <h3>Dev Ops</h3>
           <ul>
-            <li>configuration as code - chef</li>
+            <li>configuration as code - chef/puppet/ansible</li>
+	    <li>environment/app provisioning via terraform and CDK</li>
             <li>primary on-call support</li>
-            <li>tools to help other engineers deploy their code easier</li>
-            <li>familiar with SaaS tools and integrations - New Relic, Datadog, etc.</li>
+            <li>deployment and maintenance tooling, developer experience oriented tooling</li>
+	    <li>CI stuff like Github Actions, CircleCI, Teamcity, and Jenkins</li>
+            <li>familiar with SaaS tools and integrations - New Relic, Datadog, Sentry, Rollbar, etc.</li>
           </ul>
+
+	  <h3>Databases I've used:</h3>
+	  <ul>
+            <li>Microsoft SQL Server</li>
+	    <li>PostgreSQL</li>
+	    <li>MySQL</li>
+	    <li>Document/object stores: MongoDB, DynamoDB, Redis</li>
+	  </ul>
         </p>
         <hr />
-        
+
         <!-- education -->
         <p>
           <h2>education</h2>
@@ -121,7 +144,7 @@
           <h4>BS Computer Science</h4>
         </p>
       </div>
-      
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
       <script src="bootstrap/js/bootstrap.min.js"></script>
     </div>
